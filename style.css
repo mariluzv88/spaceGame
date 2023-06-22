@@ -1,30 +1,48 @@
 .mainContainer{
-height: 98vh; 
+height: 1100px; 
 border: solid cyan;
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 background-image: url("https://i.pinimg.com/originals/1a/a2/00/1aa2008c04d15f46d38b797cb1452ed4.gif");
 background-size: cover ;
+/* scroll-snap-type: y; */
 
 }
 .alienContainer{
-height: 25vh;
+height: 450px;
 border: solid blue;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 }
 .alien{
-    border: solid purple;
+    border: solid white;
     height: 50%;
+    display: flex;
+    justify-content: center;
 }
-.screen{
-height: 50vh;
+.alienImg{
+    height: 150px;
+    
+   
+}
+.thescreen{
+    overflow-y: scroll;
+height: 1000px;
 border: solid orange;
+background-color: black;
+color: white;
+font-size: 50px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding: 80px;
+text-align: left;
+/* scroll-snap-align: end; */
+
+
 }
 .humanContainer{
-height: 25vh;
+height: 450px;
 border: solid red;
 display: flex;
 flex-direction: column;
@@ -34,6 +52,13 @@ justify-content: space-between;
 border: solid purple;
 height: 50%;
 order: -1;
+display: flex;
+justify-content: center;
+}
+.humanImg{
+    height: 200px;
+    
+   
 }
 .containerH,.containerA{
 display: flex;
@@ -48,7 +73,7 @@ justify-content: space-between;
     margin:30px 250px 10px 0px;
     background-color: rgba(77, 77, 77, 0);
     border: solid 19px red;
-    color: magenta;
+    color: lime;
     font-family: 'Franklin Gothic Medium' ;
     font-size: 30px;
 }
@@ -61,4 +86,10 @@ justify-content: space-between;
 .hpText,.bloomText,.apText{
     padding: 10px 0px 10px 0px;
     
+}
+.nameTxt{
+color: magenta;
+font-size:  20px;
+font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
 }

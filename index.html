@@ -12,15 +12,27 @@
     <body>
         <!-- main container holding game contents -->
         <div class="mainContainer">
+            <div class="startContainer">
+
+                <!-- start game button and title -->
+                <div class="spaceGame">
+                    <div class="spaceBattle">SPACE EXPLORER</div>
+                </div>
+                <div class="startBtn">
+                    <button class="start"onclick="Rounds()">START</button>
+                    <button class="start"onclick="retreat()">RETREAT</button>
+                    
+                </div>
+            </div>
             <div class="alienContainer">
                     <div class="containerA">
                           <div class="statsA">
                                <!-- hp/hull -->
-                              <div class="hpText">Hull:</div>
+                              <div class="hpText">Hull:<progress class="health"  max="100"></progress>30</div>
                               <!-- bloom/accuracy -->
-                             <div class="bloomText">Accuracy:</div>
+                             <div class="bloomText">Accuracy: 6</div>
                              <!-- ap/firepower -->
-                             <div class="apText">Fire Power:</div>
+                             <div class="apText">Fire Power: 2</div>
                              <!--  attack/fire button -->
                             </div> 
                             <button class="attackBtn"onclick="battleP1(human)">Attack</button>
@@ -30,7 +42,8 @@
                         <!-- opponent icon container -->
                         <div class="alienIcon">
                             <!-- opp img -->
-                            <img src="https://thumbs.gfycat.com/InfamousAppropriateAiredale-max-1mb.gif">
+                            <img src="https://thumbs.gfycat.com/InfamousAppropriateAiredale-max-1mb.gif" alt="" class="alienIcon">
+                            <!-- <img src="https://thumbs.gfycat.com/InfamousAppropriateAiredale-max-1mb.gif"> -->
                             <!-- oppname text -->
                             
                         </div>
@@ -50,23 +63,25 @@
                 <div class="containerH">
                     <div class="statsH">
                         <!-- hp/hull -->
-                        <div class="hpText">Hull:</div>
+                        <div class="hpText">Hull:
+                            <progress class="health"  max="100"></progress>100
+                        </div>
                         <!-- bloom/accuracy -->
-                        <div class="bloomText">Accuracy:</div>
+                        <div class="bloomText">Accuracy: 7</div>
                         <!-- ap/firepower -->
-                        <div class="apText">Fire Power:</div>
+                        <div class="apText">Fire Power: 5</div>
                         <!--  attack/fire button -->
                     </div>
-                    <button class="attackBtn" onclick="battleP1(alien1)">Attack</button> 
+                    <button class="attackBtn" onclick="battleP1()">Attack</button> 
                 </div>
                 <!-- player section-->
             <div class="human">
                  <!-- player icon container -->
                 <div class="humanIcon">
                      <!-- player img -->
-                    <img src="https://media3.giphy.com/media/eaR8z0pRoAeOKCKZdM/giphy.gif?cid=6c09b952dswcz4mvokycmg6d6hacyphk75bpm5sas5ruw763&ep=v1_stickers_related&rid=giphy.gif&ct=s" alt="" class="humanImg">
+                    <img src="https://media.tenor.com/x3U8_nZ2yF8AAAAM/%D1%85%D1%83%D1%91%D0%BA.gif">
                      <!-- player name text -->
-                     <div class="nameTxt">USS Assembly</div>
+                     <div class="nameTxt">USS Assembly(M.I.B)</div>
             </div>
                        
                

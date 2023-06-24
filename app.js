@@ -63,12 +63,12 @@ let alien5 ={
     pic:"https://i.pinimg.com/originals/72/e7/ca/72e7caf49bf59454048170002674c4a7.gif"
 }
 let alien6 ={
-    name:"The Great Gazoo",
+    name:"Roger",
     hp:randomAction(3,6),
     ap: randomAction(2,4),
     bloom:randomAction(6,8),
     isMyTurn: true,
-    pic:"https://media.tenor.com/gUWnjI03gZAAAAAM/gazoo-gun.gif"
+    pic:"https://i.gifer.com/6eXq.gif"
 }
 
 
@@ -93,6 +93,7 @@ let human ={
 // toggle new alien
 let currentAlien = [alien1]
 let counter = 0
+let theHoard = [alien1,alien2,alien3,alien4,alien5,alien6]
 // let theRound = ["Round1","Round2","Round3"]
 let RoundAvailable = ["Round1","Round2","Round3"]
 isClicked = true
@@ -116,8 +117,14 @@ const Rounds =()=>{
     //    setTimeout(theRound,3000)
     alert(`${RoundAvailable[0]} is starting....`)
     showScreen("The Hoard is Approaching.......")
+    showEnemy()
+    
     // humanAttack()
     // showAlien()
+}
+const showEnemy =()=>{
+    let daHoard = document.querySelector('.hoard')
+    daHoard.classList.toggle('showHoard')
 }
 // let enemy = document.querySelector('.alien')
 // enemy.classList.toggle('alienIcon')
@@ -135,6 +142,7 @@ const showAlien =()=>{
 // attack functon player state isAttacking
 
 const battleP1 = (player)=>{
+   
     let currentAlien = alien1
     if(player === human){
         let checkHp = human.hp -= currentAlien.ap
@@ -156,9 +164,10 @@ const checkWin =()=>{
         showScreen(`YOU WON the Fight, defeated ${alien1.name}....something else lingers in the shadows `)
         //  setTimeout(showScreen,10000)
         //  showScreen("New Enemy Approaches")
-        // nextEnemy()
+        nextEnemy()
     }
 }
+
 // let alien1 = alien2
 // if(alien1.hp === 0){
     //     let newOpp = document.querySelector('.alienIcon')
@@ -178,17 +187,25 @@ const checkWin =()=>{
         // }
         const nextEnemy=()=>{
             if(currentAlien.hp < 1){
-                currentAlien.innerHTML=""
+                switchAlien()
                 
             }
             
+}
+const switchAlien = ()=>{
+   
+    let nextAlien = document.querySelector('#alien2')
+    let switchAlien = document.createElement('img')
+    switchAlien.setAttribute('src',theHoard[counter].pic)
+    switchAlien.setAttribute('class','alien2')
+    nextAlien.replaceWith(switchAlien)
 }
 // const myTurn = ()=>{
     //     if(theHoard.isMyTurn === true){
         //     let newALien = 
         //     }
         // }
-        let theHoard = [alien1,alien2,alien3,alien4,alien5,alien6]
+        
         console.log(theHoard[0].hp)
         console.log(nextEnemy())
         

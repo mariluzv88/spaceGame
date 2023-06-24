@@ -25,29 +25,61 @@
                 </div>
             </div>
             <div class="alienContainer">
+                <!-- <button onclick="switchAlien()">switch</button> -->
                     <div class="containerA">
-                          <div class="statsA">
-                               <!-- hp/hull -->
-                              <div class="hpText">Hull:<progress class="health"  max="100"></progress>30</div>
-                              <!-- bloom/accuracy -->
-                             <div class="bloomText">Accuracy: 6</div>
-                             <!-- ap/firepower -->
-                             <div class="apText">Fire Power: 2</div>
-                             <!--  attack/fire button -->
-                            </div> 
-                            <button class="attackBtn"onclick="battleP1(human)">Attack</button>
-                    </div>
-                  
-                    <div class="alien">
-                        <!-- opponent icon container -->
-                        <div class="alienIcon">
-                            <!-- opp img -->
-                            <img src="https://thumbs.gfycat.com/InfamousAppropriateAiredale-max-1mb.gif" alt="" class="alienIcon">
-                            <!-- <img src="https://thumbs.gfycat.com/InfamousAppropriateAiredale-max-1mb.gif"> -->
-                            <!-- oppname text -->
-                            
+                        
+                        <div class="hoard">
+                            <div class="aliensContainer">
+                                <img src="https://thumbs.gfycat.com/HealthyWildHarrierhawk-max-1mb.gif" alt="" class="aliens" id="alien2">
+                                <div class="Txt"> The MonStars</div>
+                            </div>
+                            <div class="aliensContainer">
+                                <img src="https://media.tenor.com/2E17n7LsxiUAAAAC/stitch-frog.gif" alt="" class="aliens"id="alien3">
+                                    
+                                    <div class="Txt">Stitch</div>
+                                </div>
+                                <div class="aliensContainer">
+                                    
+                                    <img src="https://media.tenor.com/st8PxZ-amRsAAAAd/kang-kodos.gif" alt="" class="aliens"id="alien4">
+                                    <div class="Txt">Kang and Kodos</div>
+                                </div>
+                                <div class="aliensContainer">
+                                    
+                                    <img src="https://i.pinimg.com/originals/72/e7/ca/72e7caf49bf59454048170002674c4a7.gif" alt="" class="aliens"id="alien5">
+                                    <div class="Txt">Zoidberg</div>
+                                </div>
+                                <div class="aliensContainer">
+                                    
+                                    <img src="https://media2.giphy.com/media/3oz8xZhem3VIH2vdPG/giphy.gif?cid=6c09b952sxhoh71mppfkrhh49w6uw4fytl7g7gopf6mr1ysg&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" alt="" class="aliens"id="alien6">
+                                    <div class="Txt">Roger</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="nameTxt">Alien</div>
+                        
+                        <div class="alien">
+                            <!-- opponent icon container -->
+                            <div class="statsA">
+                                <!-- hp/hull -->
+                                <div class="player2">   <!-- opp img -->
+                                    <img src="https://thumbs.gfycat.com/InfamousAppropriateAiredale-max-1mb.gif" alt="" class="alien1">
+                                    <!-- <img src="https://thumbs.gfycat.com/InfamousAppropriateAiredale-max-1mb.gif"> -->
+                                    <!-- oppname text -->
+                                    
+                                </div>
+                                <div class="nameTxt"onclick="stats">The Martian
+        
+                                    
+                                    <div class="hpText">Hull:<progress class="health"  max="100"></progress>30</div>
+                                    <!-- bloom/accuracy -->
+                                    <div class="bloomText">Accuracy: 6</div>
+                                    <!-- ap/firepower -->
+                                    <div class="apText">Fire Power: 2</div>
+                                    <!--  attack/fire button -->
+                                </div>
+                                <button class="attackBtn"onclick="battleP1(human)">Attack</button>
+                            </div> 
+                        
+                        
                         <!-- opponent stats container-->
                         
                     </div>
@@ -58,31 +90,31 @@
                 <!-- input append output -->
 
             <div class="humanContainer">
-
-                <!-- player stats container-->
-                <div class="containerH">
+                <div class="alien">
+                    <!-- opponent icon container -->
                     <div class="statsH">
                         <!-- hp/hull -->
-                        <div class="hpText">Hull:
-                            <progress class="health"  max="100"></progress>100
+                        <div class="player1">   <!-- opp img -->
+                            <!-- player img -->
+                            <img src="https://media.tenor.com/x3U8_nZ2yF8AAAAM/%D1%85%D1%83%D1%91%D0%BA.gif">
+                            <!-- player name text -->
                         </div>
-                        <!-- bloom/accuracy -->
-                        <div class="bloomText">Accuracy: 7</div>
-                        <!-- ap/firepower -->
-                        <div class="apText">Fire Power: 5</div>
-                        <!--  attack/fire button -->
-                    </div>
-                    <button class="attackBtn" onclick="battleP1()">Attack</button> 
-                </div>
-                <!-- player section-->
-            <div class="human">
-                 <!-- player icon container -->
-                <div class="humanIcon">
-                     <!-- player img -->
-                    <img src="https://media.tenor.com/x3U8_nZ2yF8AAAAM/%D1%85%D1%83%D1%91%D0%BA.gif">
-                     <!-- player name text -->
-                     <div class="nameTxt">USS Assembly(M.I.B)</div>
-            </div>
+                        <div class="nameTxt"onclick="stats">USS Assembly(M.I.B)
+
+                            
+                            <div class="hpText">Hull:
+                                <progress class="health"  max="100"></progress>100
+                            </div>
+                            <!-- bloom/accuracy -->
+                            <div class="bloomText">Accuracy: 7</div>
+                            <!-- ap/firepower -->
+                            <div class="apText">Fire Power: 5</div>
+                            <!--  attack/fire button -->
+                        </div>
+                        <button class="attackBtn" onclick="battleP1()">Attack</button> 
+                </div> 
+
+               
                        
                
             </div>
